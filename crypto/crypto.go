@@ -5,7 +5,7 @@ import (
 	"crypto/aes"
 	"crypto/sha256"
 	"encoding/hex"
-	//"crypto/cipher"
+	"crypto/cipher"
 )
 
 func Encrypt(data []byte, key string) []byte {
