@@ -63,8 +63,8 @@ func (t Token) SendMedia(recipient string, username string, mediaId string) (boo
 	if err != nil {
 		log.Fatal(err)
 	}
-	// bdy, _ := ioutil.ReadAll(resp.Body)
-	// fmt.Println(string(bdy))
+	 bdy, _ := ioutil.ReadAll(resp.Body)
+	 fmt.Println(string(bdy))
 	return (resp.StatusCode == http.StatusOK), nil
 }
 
